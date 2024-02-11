@@ -1,0 +1,68 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: registro-gateway
+  labels:
+    app: registro-gateway
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: registro-gateway
+  template:
+    metadata:
+      labels:
+        app: registro-gateway
+    spec:
+      serviceAccount: spring-cloud-kubernetes
+      containers:
+      - name: registro-gateway
+        image: urt/registro-gateway:latest
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: SPRING_CLOUD_BOOTSTRAP_ENABLED
+          value: "true"
+        - name: STARTUP_SLEEP
+          value: "5"
+        - name: SPRING_CLOUD_KUBERNETES_CONFIG_ENABLED
+          value: "true"
+        - name: SPRING_CLOUD_KUBERNETES_SECRETS_ENABLED
+          value: "true"
+        - name: SPRING_CLOUD_KUBERNETES_CONFIG_ENABLEAPI
+          value: "true"
+        ports:
+        - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /management/health/readiness
+            port: 8080
+            httpHeaders:
+                - name: Authorization
+                  value: Basic JHt7IHNlY3JldHMuU0VDVVJJVFlfVVNFUl9OQU1FIH19OiR7eyBzZWNyZXRzLlNFQ1VSSVRZX1BBU1NXT1JEIH19
+          failureThreshold: 1
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          
+        livenessProbe:
+          httpGet:
+            path: /management/health/liveness
+            port: 8080
+            httpHeaders:
+                - name: Authorization
+                  value: Basic JHt7IHNlY3JldHMuU0VDVVJJVFlfVVNFUl9OQU1FIH19OiR7eyBzZWNyZXRzLlNFQ1VSSVRZX1BBU1NXT1JEIH19
+          failureThreshold: 3
+          initialDelaySeconds: 60
+          periodSeconds: 15
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: registro-gateway
+spec:
+  ports:
+    - port: 8080
+      targetPort: 8080
+      protocol: TCP
+  type: LoadBalancer
+  selector:
+    app: registro-gateway

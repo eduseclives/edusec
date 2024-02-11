@@ -1,0 +1,28 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: registro-authorization-server
+data:
+  application-kubernetes.yml: |-
+      server:
+        port: 9091
+      spring:
+        config:
+          activate:
+            on-profile: kubernetes
+        application:
+          name: registro-authorization-server
+          
+        datasource:
+          password: secret
+          url: jdbc:postgresql://host.docker.internal:5432/mydatabase
+          username: myuser
+      management:
+        health:
+          readinessstate:
+            enabled: true
+          livenessstate:
+            enabled: true
+        zipkin:
+          tracing:
+            endpoint: http://host.docker.internal:9411/api/v2/spans

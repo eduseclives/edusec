@@ -1,0 +1,71 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: registro-core
+  labels:
+    app: registro-core
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: registro-core
+  template:
+    metadata:
+      labels:
+        app: registro-core
+    spec:
+      serviceAccountName: spring-cloud-kubernetes
+      containers:
+      - name: registro-core
+        image: urt/registro-core
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 8096
+        env:
+        - name: SPRING_CLOUD_BOOTSTRAP_ENABLED
+          value: "true"
+        - name: SPRING_APPLICATION_NAME
+          value: "registro-core"
+        - name: STARTUP_SLEEP
+          value: "5"
+        - name: SPRING_CLOUD_KUBERNETES_CONFIG_ENABLED
+          value: "true"
+        - name: SPRING_CLOUD_KUBERNETES_SECRETS_ENABLED
+          value: "true"
+        - name: SPRING_CLOUD_KUBERNETES_CONFIG_ENABLEAPI
+          value: "true"
+        readinessProbe:
+          httpGet:
+            path: /management/health/readiness
+            port: 8096
+            httpHeaders:
+                - name: Authorization
+                  value: Basic JHt7IHNlY3JldHMuU0VDVVJJVFlfVVNFUl9OQU1FIH19OiR7eyBzZWNyZXRzLlNFQ1VSSVRZX1BBU1NXT1JEIH19
+          failureThreshold: 1
+          initialDelaySeconds: 30
+          periodSeconds: 10
+          
+        livenessProbe:
+          httpGet:
+            path: /management/health/liveness
+            port: 8096
+            httpHeaders:
+                - name: Authorization
+                  value: Basic JHt7IHNlY3JldHMuU0VDVVJJVFlfVVNFUl9OQU1FIH19OiR7eyBzZWNyZXRzLlNFQ1VSSVRZX1BBU1NXT1JEIH19
+          failureThreshold: 3
+          initialDelaySeconds: 60
+          periodSeconds: 15
+          
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: registro-core
+spec:
+  ports:
+    - port: 80
+      targetPort: 8096
+      protocol: TCP
+  type: LoadBalancer
+  selector:
+    app: registro-core

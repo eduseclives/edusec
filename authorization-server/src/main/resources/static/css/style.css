@@ -1,0 +1,338 @@
+/* CSS styles for login web page */
+
+body {
+	width: 100%;
+	padding: 1% 0 0%;
+	margin: auto;
+	background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, .7)), url(../../../images/background.jpg);
+	background-size: cover;
+	background-position: top center;
+	z-index: 1;
+	background-color: #eee;
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+input {
+	font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+h4 {
+	font-size: 1.125rem;
+	line-height: 1.4em;
+	font-weight: 300;
+}
+
+header {
+	padding: 5px;
+	height: 9vh;
+}
+
+.header-logo {
+	background-image: url('../../../images/logo.png');
+	background-position: center center;
+	float: left;
+	height: 60px;
+	width: 330px;
+	max-width: 90%;
+	position: relative;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+	width: 100%;
+}
+
+.login-page {
+	position: relative;
+	z-index: 9999;
+	background: #FFFFFF;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	padding: 10px 25px 15px 25px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	border-radius: 6px;
+}
+
+.login-form {
+	max-width: 330px;
+	margin: 0 auto;
+	padding: 10px 30px 10px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border-radius: 5px;
+}
+
+.form-header {
+	position: relative;
+	z-index: 99999;
+	background: #004C66 !important;
+	color: #FFFFFF;
+	max-width: 280px;
+	margin: 0 auto;
+	padding: 5px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	border-radius: 6px;
+	bottom: 55px;
+	position: relative;
+}
+
+form input {
+	width: 90%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.login-form .button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #f3ab00;
+	width: 100%;
+	border-radius: 25px;
+	padding: 15px;
+	color: #FFFFFF;
+	font-size: 14px;
+	-webkit-transition: all 0.3 ease;
+	transition: all 0.3 ease;
+	cursor: pointer;
+	font-size: 16px;
+}
+
+footer {
+	background-color: #f5f5f5;
+	padding: 10px;
+	text-align: center;
+	height: 9vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.logo_unidad {
+	background-image: url('../../../images/logo.png');
+	background-position: center center;
+	float: left;
+	height: 60px;
+	width: 330px;
+	position: relative;
+	background-repeat: no-repeat;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+footer .logo_unidad {
+	position: relative;
+	width: 20%;
+	height: 50px;
+	background-image: url('../../../images/logo_unidad.png');
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background-repeat: no-repeat;
+	margin-left: 30px;
+}
+
+footer .logos_gobierno {
+	position: relative;
+	width: 20%;
+	height: 55px;
+	background-image: url('../../../images/logos_gobierno.png');
+	float: right;
+	margin-top: 8px;
+	margin-bottom: 7px;
+	background-repeat: no-repeat;
+	margin-right: 5px;
+}
+
+footer .ley_footer {
+	position: relative;
+	width: 60%;
+	float: left;
+	font-size: 10px;
+	font-style: italic;
+	color: #333;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	line-height: 10px;
+}
+
+.error {
+	color: #f55145;
+}
+
+@media only screen and (max-width: 480px) {
+	.main {
+		padding: 20px 10px;
+		width: 100%;
+	}
+
+	footer {
+		background-color: #f5f5f5;
+		padding: 10px;
+		text-align: center;
+		height: 25vh;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	footer .logo_unidad {
+		position: relative;
+		width: 100%;
+		height: 50px;
+		background-image: url('../../../images/logo_unidad.png');
+		float: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-repeat: no-repeat;
+		margin-left: 10px;
+	}
+
+	footer .ley_footer {
+		position: relative;
+		width: 100%;
+		float: left;
+		font-size: 10px;
+		font-style: italic;
+		color: #333;
+		margin-top: 10px;
+		margin-right: 20px;
+		margin-bottom: 10px;
+		margin-left: 20px;
+		line-height: 10px;
+	}
+
+	footer .logos_gobierno {
+		position: relative;
+		width: 100%;
+		height: 55px;
+		background-image: url('../../../images/logos_gobierno_small.png');
+		float: right;
+		margin-top: 8px;
+		margin-bottom: 7px;
+		background-repeat: no-repeat;
+		margin-right: 10px;
+	}
+
+	.header-logo {
+		background-image: url('../../../images/logo.png');
+		background-position: center center;
+		float: left;
+		height: 60px;
+		width: 100%;
+		position: relative;
+		background-repeat: no-repeat;
+		margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		display: flex;
+		align-content: center;
+		max-width: 95%;
+	}
+}
+
+
+
+@media (min-width: 481px) and (max-width: 1024px) {
+	.main {
+		padding: 20px 10px;
+		width: 100%;
+	}
+
+	footer {
+		background-color: #f5f5f5;
+		padding: 10px;
+		text-align: center;
+		height: 20vh;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	footer .logo_unidad {
+		position: relative;
+		width: 100%;
+		height: 50px;
+		background-image: url('../../../images/logo_unidad.png');
+		float: left;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		background-repeat: no-repeat;
+		margin-left: 10px;
+	}
+
+	footer .ley_footer {
+		position: relative;
+		width: 100%;
+		float: left;
+		font-size: 10px;
+		font-style: italic;
+		color: #333;
+		margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		line-height: 10px;
+	}
+
+	footer .logos_gobierno {
+		position: relative;
+		width: 100%;
+		height: 55px;
+		background-image: url('../../../images/logos_gobierno_small.png');
+		float: right;
+		margin-top: 8px;
+		margin-bottom: 7px;
+		background-repeat: no-repeat;
+		margin-right: 10px;
+	}
+
+	.header-logo {
+		background-image: url('../../../images/logo.png');
+		background-position: center center;
+		float: left;
+		height: 60px;
+		width: 100%;
+		position: relative;
+		background-repeat: no-repeat;
+		margin-top: 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		margin-left: 10px;
+		display: flex;
+		align-content: center;
+		max-width: 98%;
+	}
+}

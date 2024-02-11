@@ -1,0 +1,12 @@
+[
+    {
+        "codigoResultado": 213,
+        "logResultadoConsulta": {
+            "fechaHoraConsulta": "2018-10-31T10:05:54.258",
+            "consecutivoConsulta": 125053419,
+            "mensaje": "El PDF fue generado correctamente"
+        },
+        "pdf": "aqu",
+        "mensajeResultado": "El PDF fue generado correctamente"
+    }
+]

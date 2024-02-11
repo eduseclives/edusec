@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+
+<head>
+	<title>.:: Sistema de Registro ::.</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}">
+	<!--     Fonts and icons     -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons" />
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+<body>
+	<header>
+        <div class="header-logo">
+        </div>
+    </header>
+    <main>
+        <div class="login-page">
+            <div class="form-header">
+				<h4>Ingreso al sistema</h4>
+			</div>
+            <div class="error" th:if="${param.error}">
+				Usuario o contraseña invalidos.</div>
+			<div class="error" th:if="${param.logout}">
+				Su sesión ha caducado.</div>
+			<form class="login-form" th:action="@{/login}" method="post">
+				<div>
+					<input type="text" id="username" name="username" placeholder="Usuario" />
+				</div>
+				<div>
+					<input id="password" type="password" name="password" placeholder="Contraseña" />
+				</div>
+				<input name="loginButton" class="button" type="submit" value="INGRESAR" />
+			</form>
+        </div>
+    </main>
+
+	<footer>
+		<div class="logo_unidad"></div>
+		<div class="ley_footer">
+			<div style="font-weight: bold;">Ley 1448 de 2011 Artículo 76</div>
+			Registro de Tierras Presuntamente Despojadas y Abandonadas Forzosamente. Créase
+			el “Registro de tierras despojadas y abandonadas forzosamente” como
+			instrumento para la restitución de tierras a que se refiere la
+			presente Ley.
+		</div>
+		<div class="logos_gobierno"></div>
+	</footer>
+</body>
+
+</html>

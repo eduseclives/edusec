@@ -1,0 +1,168 @@
+[
+	{
+        "tipoResultadoCompleto": [
+            {
+                "tipoLstCertificadoTradiciLibertEnt": {
+                    "numeroDirecciones": 1,
+                    "ubicacionMatriculaSistemaIGAC": {
+                        "estadoMatricula": 0,
+                        "numeroMatriculaInmobiliariaPredio": 13277,
+                        "CHIPPredio": "200110001000000040054000000000",
+                        "direccionNacionalUrbanaUbicacionPredio": {
+                            "nomenclaturaDomiciliariaUrbana": "ELDELEITE",
+                            "municipio": {
+                                "nomMunicipio": "AGUACHICA",
+                                "codMunicipio": 20011
+                            },
+                            "numeroDireccion": 0,
+                            "departamento": {
+                                "nomDepartamento": "CESAR",
+                                "codDepartamento": 20
+                            }
+                        }
+                    },
+                    "numeroPropietarios": 4
+                },
+                "tipoLstCertificadoTradiciLibertSal": {
+                    "listaAnotacionTramiteCertificadoTradicion": {
+                        "anotacionCertificadoTradicion": {
+                            "personaIntervieneActoAnotacionFolio": {
+                                "personaRecibePredio": {
+                                    "personaNacionalIntervieneActo": {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 59337331
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "nomTipoIdentificacion": "",
+                                                "codTipoIdentificacion": "SE"
+                                            }
+                                        },
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "CAVIEDES",
+                                            "segundoNombre": "JOSE",
+                                            "segundoApellido": "BAYONA",
+                                            "primerNombre": "SEBASTIAN"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "jurisdiccionPredio": 196
+                }
+            },
+            {
+                "tipoLstCertificadoTradiciLibertEnt": {
+                    "numeroDirecciones": 1,
+                    "ubicacionMatriculaSistemaIGAC": {
+                        "estadoMatricula": 0,
+                        "numeroMatriculaInmobiliariaPredio": 16331,
+                        "CHIPPredio": "200110001000000040106000000000",
+                        "direccionNacionalUrbanaUbicacionPredio": {
+                            "nomenclaturaDomiciliariaUrbana": "BELLA SANDRA",
+                            "municipio": {
+                                "nomMunicipio": "AGUACHICA",
+                                "codMunicipio": 20011
+                            },
+                            "numeroDireccion": 0,
+                            "departamento": {
+                                "nomDepartamento": "CESAR",
+                                "codDepartamento": 20
+                            }
+                        }
+                    },
+                    "numeroPropietarios": 4
+                },
+                "tipoLstCertificadoTradiciLibertSal": {
+                    "listaAnotacionTramiteCertificadoTradicion": {
+                        "anotacionCertificadoTradicion": {
+                            "personaIntervieneActoAnotacionFolio": {
+                                "personaRecibePredio": {
+                                    "personaNacionalIntervieneActo": {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 59337331
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "nomTipoIdentificacion": "",
+                                                "codTipoIdentificacion": "SE"
+                                            }
+                                        },
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "CAVIEDES",
+                                            "segundoNombre": "JOSE",
+                                            "segundoApellido": "BAYONA",
+                                            "primerNombre": "SEBASTIAN"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "jurisdiccionPredio": 196
+                }
+            },
+            {
+                "tipoLstCertificadoTradiciLibertEnt": {
+                    "numeroDirecciones": 1,
+                    "ubicacionMatriculaSistemaIGAC": {
+                        "estadoMatricula": 0,
+                        "numeroMatriculaInmobiliariaPredio": 12702,
+                        "CHIPPredio": "200110101000001210004000000000",
+                        "direccionNacionalUrbanaUbicacionPredio": {
+                            "nomenclaturaDomiciliariaUrbana": "CALLE 3 9-60",
+                            "municipio": {
+                                "nomMunicipio": "AGUACHICA",
+                                "codMunicipio": 20011
+                            },
+                            "numeroDireccion": 0,
+                            "departamento": {
+                                "nomDepartamento": "CESAR",
+                                "codDepartamento": 20
+                            }
+                        }
+                    },
+                    "numeroPropietarios": 4
+                },
+                "tipoLstCertificadoTradiciLibertSal": {
+                    "listaAnotacionTramiteCertificadoTradicion": {
+                        "anotacionCertificadoTradicion": {
+                            "personaIntervieneActoAnotacionFolio": {
+                                "personaRecibePredio": {
+                                    "personaNacionalIntervieneActo": {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 60375907
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "nomTipoIdentificacion": "",
+                                                "codTipoIdentificacion": "SE"
+                                            }
+                                        },
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "CAVIEDES",
+                                            "segundoNombre": "JOSE",
+                                            "segundoApellido": "BAYONA",
+                                            "primerNombre": "SEBASTIAN"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "jurisdiccionPredio": 196
+                }
+            }
+        ],
+        "tipoLogResultadoConsulta": {
+            "fechaHoraConsulta": "2018-10-31T10:20:01.036",
+            "consecutivoConsulta": 125057414,
+            "identificacionNotaria": "",
+            "mensaje": "Consulta Exitosa"
+        }
+    }
+]

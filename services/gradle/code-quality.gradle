@@ -1,0 +1,60 @@
+jacoco {
+    toolVersion = "0.8.9"
+}
+
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
+    reports {
+        xml.required = false
+        csv.required = false
+        html.outputLocation = layout.buildDirectory.dir('reports/jacoco-html')
+    }
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.5
+            }
+        }
+
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
+    }
+}
+
+tasks.withType(Checkstyle) {
+    reports {
+        xml.required = false
+        html.required = true
+    }
+}
+
+spotbugs {
+  toolVersion = '4.7.3'
+  reportsDir = file("$buildDir/reports/spotbugs")
+  showProgress = true
+}
+
+spotbugsMain {
+    reports {
+        html {
+            required = true
+            outputLocation = file("$buildDir/reports/spotbugs/main/spotbugs.html")
+        }
+    }
+}
+
+dependencyCheck {
+  outputDirectory = file("$buildDir/reports/dependency-check")
+}

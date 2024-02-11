@@ -1,0 +1,33 @@
+apiVersion: skaffold/v4beta5
+kind: Config
+metadata:
+  name: registro-kubernetes
+build:
+  artifacts:
+    - image: piomin/admin
+      jib:
+        project: admin-service
+    - image: piomin/department
+      jib:
+        project: department-service
+        args:
+          - -DskipTests
+    - image: piomin/employee
+      jib:
+        project: employee-service
+        args:
+          - -DskipTests
+    - image: piomin/gateway
+      jib:
+        project: gateway-service
+    - image: piomin/organization
+      jib:
+        project: organization-service
+        args:
+          - -DskipTests
+  tagPolicy:
+    gitCommit: {}
+manifests:
+  rawYaml:
+    - ../documents/k8s/*.yaml
+    - ./k8s/*.yaml

@@ -1,0 +1,12 @@
+[
+	{
+        "estado": "ERROR",
+        "fecha": "2018-09-19T15:32:28.004",
+        "mensajeResultado": "Error de parametros, el tipo de pago ingresado no se encuentra definido para realizar esta radicación. - Radicacion",
+        "tipoLogResultadoConsulta": {
+            "fechaHoraConsulta": "2018-09-19T15:32:28.004",
+            "consecutivoConsulta": 120850203,
+            "mensaje": "Error de parametros, el tipo de pago ingresado no se encuentra definido para realizar esta radicación."
+        }
+    }
+]

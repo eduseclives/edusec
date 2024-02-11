@@ -1,0 +1,29 @@
+eureka:
+  client:
+    enabled: false
+      
+logging:
+  level:
+    org.springframework.security: WARN
+    org.springframework.web: WARN
+    org.springframework.web.filter.CommonsRequestLoggingFilter: WARN
+
+server:
+  port: 0
+  
+spring:
+  config:
+    activate:
+      on-profile:
+      - test
+  application:
+    name: authorization
+  cloud:
+    config:
+      enabled: false
+  
+management:
+  endpoint:
+    health:
+      probes:
+        enabled: false

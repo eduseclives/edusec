@@ -1,0 +1,83 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: registro-gateway
+data:
+  application-kubernetes.yaml: |-
+      registry-gateway:
+        logging:
+          loki-url: http://host.docker.internal:3100/loki/api/v1/push
+      management:
+        endpoints:
+          web:
+            base-path: /management   
+            exposure:
+              include: health,info,metrics,refresh,env,caches,configprops,env,loggers,refresh,prometheus,gateway
+        health:
+          readinessstate:
+            enabled: true
+          livenessstate:
+            enabled: true
+        zipkin:
+          tracing:
+            endpoint: http://host.docker.internal:9411/api/v2/spans
+            
+      spring:
+        main:
+          cloud-platform: kubernetes
+        application:
+          name: registro-gateway
+        config:
+          activate:
+            on-profile: kubernetes
+        security:
+          oauth2:
+            resourceserver:
+              opaquetoken:
+                introspection-uri: http://host.docker.internal:9091/oauth2/introspect
+              jwt:
+                issuer-uri: http://host.docker.internal:9091
+        cloud:
+          kubernetes:
+            discovery:
+              discovery:
+                 locator:
+                   enabled: false
+              all-namespaces: true
+            secrets:
+              enable-api: true
+            config:
+              enable-api: true
+              enabled: true
+          gateway:
+            routes:
+            - id: 
+              uri: http://registro-documentos/
+              predicates:
+              - Path=/documentos/**, /documentosFs/**
+              filters:
+              - SecureHeaders
+            - id: tramites
+              uri: http://34.72.224.98:9090/
+              predicates:
+              - Path=/tramitesAdmon/**
+              filters:
+              - SecureHeaders
+            - id: invoke
+              uri: http://localhost:9090/
+              predicates:
+              - Path=/invoke/**
+              filters:
+              - SecureHeaders
+            filter:
+              secure-headers:
+                strict-transport-security: max-age=631138519
+            default-filters:
+              - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+            globalcors:
+              add-to-simple-url-handler-mapping: true
+              corsConfigurations:
+                '[/**]':
+                  allowedOriginPatterns: "*"
+                  allowedHeaders: "*"
+                  allowedMethods: "*"

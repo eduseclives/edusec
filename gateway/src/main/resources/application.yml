@@ -1,0 +1,161 @@
+eureka:
+  client:
+    enabled: true
+    healthcheck:
+      enabled: true
+    fetch-registry: true
+    register-with-eureka: true
+    instance-info-replication-interval-seconds: 10
+    registry-fetch-interval-seconds: 10
+    service-url:
+      defaultZone: ${EUREKA_URI:http://admin:admin@localhost:8761/eureka/}
+  instance:
+    metadata-map:
+      zone: primary # This is needed for the load balancer
+      git-branch: ${git.branch:NA}
+      git-commit: ${git.commit.id.abbrev:NA}
+      git-version: ${git.commit.id.describe:NA}
+      context-path: ${server.servlet.context-path:NA}  
+      
+    appname: gateway
+    instanceId: gateway:${spring.application.instance-id:${random.value}}
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 10
+    #status-page-url-path: ${management.endpoints.web.base-path}/info
+    #health-check-url-path: ${management.endpoints.web.base-path}/health
+      
+
+spring:
+  application:
+    name: gateway
+    
+  config:
+    import:
+    - optional:configserver:http://admin:admin@localhost:8761/config/
+  cloud:
+    config:
+      enabled: true
+       
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+          predicates:
+            - name: Path
+              args:
+                pattern: "'/services/'+serviceId.toLowerCase()+'/**'"
+          filters:
+            - name: RewritePath
+              args:
+                regexp: "'/services/' + serviceId.toLowerCase() + '/(?<remaining>.*)'"
+                replacement: "'/${remaining}'"
+      routes:
+      - id:
+        uri: http://localhost:8089/
+        predicates:
+        - Path=/app
+      
+      - id: tramites
+        uri: http://34.72.224.98:9090/
+        predicates:
+        - Path=/tramAdmon/**
+        filters:
+        - SecureHeaders
+      - id: invoke
+        uri: http://localhost:9090/
+        predicates:
+        - Path=/invoke/**
+        filters:
+        - SecureHeaders
+      filter:
+        secure-headers:
+          strict-transport-security: max-age=631138519
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      globalcors:
+        add-to-simple-url-handler-mapping: true
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods:
+            - GET
+            - POST
+            - PUT
+            - DELETE
+            - PATCH
+            - OPTIONS       
+          
+  main:
+    cloud-platform: none
+
+  security:
+    oauth2:
+      resourceserver:
+        opaquetoken:
+          client-id: client
+          client-secret: bd2b1aaf7ef4f09be9f52ce2d8d599674d81aa9d6a4421696dc4d93dd0619d682ce56b4d64a9ef097761ced99e0f67265b5f76085e5b0ee7ca4696b2ad6fe2b2
+          introspection-uri: http://localhost:9091/oauth2/introspect
+        jwt:
+          issuer-uri: http://localhost:9091
+          
+springdoc:
+  use-management-port: false
+  show-actuator: false
+
+
+management:
+  health:
+    readinessstate:
+      enabled: true
+    livenessstate:
+      enabled: true  
+  zipkin:
+    tracing:
+      endpoint: http://localhost:9411/api/v2/spans
+  endpoints:
+    enabled-by-default: true
+    web:
+      base-path: /management   
+      exposure:
+        include: "*"
+  # All traces should be sent to latency analysis tool
+  endpoint:
+    gateway:
+      enabled: true
+    health:
+      probes:
+        enabled: true
+    info:
+      enabled: true
+  info:
+    defaults:
+      enabled: true
+    env:
+      enabled: true
+    git:
+      mode: full
+  tracing:
+    sampling:
+      probability: 1.0
+  observations:
+    key-values:
+      application: ${spring.application.name}
+      
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
+
+
+logging:
+  pattern:
+    level: "%5p [${spring.zipkin.service.name:${spring.application.name:}},%X{traceId:-},%X{spanId:-}]"
+    #level: "app=${spring.application.name:},host=${HOSTNAME},traceID=%X{traceId:-NONE},%X{spanId:-},level=%level"
+  level:
+    org.springframework.cloud.gateway: ERROR
+    org.springframework.security: ERROR
+    org.springframework.web: ERROR
+    org.springframework.security.oauth2: ERROR
+    com.netflix: TRACE

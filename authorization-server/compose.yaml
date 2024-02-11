@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'postgres:15.5.0-bullseye'
+    environment:
+      - 'POSTGRES_DB=mydatabase'
+      - 'POSTGRES_PASSWORD=secret'
+      - 'POSTGRES_USER=myuser'
+    ports:
+      - '5432:5432'

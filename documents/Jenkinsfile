@@ -1,0 +1,60 @@
+#!/usr/bin/env groovy
+
+pipeline {
+
+    agent any
+
+    //options {
+        
+    //}
+
+    tools {
+        jdk "JDK 21.0.35"
+    }
+
+    stages {
+        stage('Cleanup') {
+            steps {
+                cleanWs()
+            }
+        }
+
+        stage('checkout') {
+            steps {
+                checkout scm
+                sh "git checkout ${BRANCH_NAME}"
+                sh "git show --summary"
+            }
+        }
+
+        stage('build') {
+            steps {
+                sh "chmod +x gradlew"
+                sh "./gradlew clean jib"
+            }
+        }
+
+        stage('CodeQuality') {
+           steps {
+                   sh "chmod +x gradlew"
+                   sh("./gradlew  clean check dependencyCheckAnalyze")
+               }
+        }
+
+        stage('Cleanup End') {
+            steps {
+                cleanWs()
+            }
+        }
+    }
+    post {
+			   always {
+			      junit 'build/test-results/test/*.xml'
+			      publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, useWrapperFileDirectly: false, reportDir: 'build/reports/tests/test', reportFiles: 'index.html', reportName: 'Test Report'])
+                  publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, useWrapperFileDirectly: false, reportDir: 'build/reports/checkstyle', reportFiles: 'main.html', reportName: 'Checkstyle Report'])
+                  publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, useWrapperFileDirectly: false, reportDir: 'build/reports/jacoco-html', reportFiles: 'index.html', reportName: 'Jacoco Test Report'])
+                  publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, useWrapperFileDirectly: false, reportDir: 'build/reports/spotbugs/main', reportFiles: 'spotbugs.html', reportName: 'Spotbugs Report'])
+                  publishHTML([allowMissing: true, alwaysLinkToLastBuild: false, keepAll: false, useWrapperFileDirectly: false, reportDir: 'build/reports/dependency-check', reportFiles: 'dependency-check-report.html', reportName: 'Dependency Check Report'])
+			   }
+			  }
+}

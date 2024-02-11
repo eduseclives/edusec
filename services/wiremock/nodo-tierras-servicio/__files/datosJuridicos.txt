@@ -1,0 +1,801 @@
+[
+    {
+        "estadoJuridicoInmueble": {
+            "listaAnotacionEstadoJuridico": {
+                "anotacionCertificadoTradicion": [
+                    {
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "BANCO GRANAHORRAR","numIdTributaria": 860034133,
+                                    "esPropietario": "X"
+                                }
+                            },
+                            "personaCedePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "CONSORCIO EDIAMANTE LIMITADA","numIdTributaria": 8002148505,
+                                    "esPropietario": "X"
+                                }
+                            }
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": 210,
+                                "nomNaturalezaJuridicaFolio": "HIPOTECA"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "HIPOTECA DE CUERPO CIERTO"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio":"ESCRITURA 385 del 1998-01-28 00:00:00 NOTARIA 9 de SANTAFE DE BOGOTA D.C.",
+                            "fechaDocumentoAnotacion": "1998-01-28T00: 00: 00.0",
+                            "codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "comentario": "ABIERTA SIN LIMITE DECUANTIA CARTA DE CREDITO $2.700.000.000 ESTE Y OTRO","dominio": "H",
+                        "entidadAnotacion": "NOTARIA 9",
+                        "fechaAnotacion": "1998-02-02T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 1,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "1998-9125"
+                    },
+                    {
+                        "fechaAnotacion": "1998-02-18T00:00:00.0",
+                        "entidadAnotacion": "NOTARIA 9",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "CONSORCIO EL DIAMANTE LIMITADA","numIdTributaria": 8002148505,
+                                    "esPropietario": "X"
+                                }
+                            },
+                            "personaCedePredio": ""
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": 360,
+                                "nomNaturalezaJuridicaFolio": "REGLAMENTO PROPIEDAD HORIZONTAL"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "CONSTITUCION DE PROPIEDAD HORIZONTAL"
+                        },
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 2,
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio":"ESCRITURA 485 del 1998-02-05 00:00:00 NOTARIA 9 de SANTAFE DE BOGOTA",
+                            "fechaDocumentoAnotacion": "1998-02-05T00: 00: 00.0",
+                            "codDocumentoAnotacionFolio": 1
+                        },
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "1998-14994",
+                        "dominio": "X",
+                        "cancelacionAnotacion": ""
+                    },
+                    {
+                        "grupo": "ADICION REGIMEN DE PROPIEDAD HORIZONTAL","personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "CONSORCIO EL DIAMANTE LIMITADA","numIdTributaria": 8002148505,
+                                    "esPropietario": "X"
+                                }
+                            },
+                            "personaCedePredio": ""
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0347",
+                                "nomNaturalezaJuridicaFolio": "ADICION REGIMEN DE PROPIEDAD HORIZONTAL"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "ADICION REGIMEN DE PROPIEDAD HORIZONTAL"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio": "ESCRITURA 5446 del 2002-09-18 00:00:00 NOTARIA 24 de BOGOTA",
+                            "fechaDocumentoAnotacion": "2002-09-18T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "comentario": "ESCRITURA 485 DE 05-02-1998 NOTARIA 9 EN CUANTO A LA SEGUNDA ETAPA.",
+                        "entidadAnotacion": "NOTARIA 24",
+                        "fechaAnotacion": "2002-09-23T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 3,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "2002-77997"
+                    },
+                    {
+                        "grupo": "COMPRAVENTA",
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaNacionalIntervieneActo": [
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 39707587
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "porcentajeParticipacion": 39707587,
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "PULIDO",
+                                            "segundoNombre": "MARISOL",
+                                            "segundoApellido": "PAVA",
+                                            "primerNombre": "BIBIA"
+                                        }
+                                    },
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 79621601
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "TARAZONA",
+                                            "segundoNombre": "",
+                                            "segundoApellido": "URREGO",
+                                            "primerNombre": "ROBERTO"
+                                        }
+                                    }
+                                ]
+                            },
+                            "personaCedePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "CONSORCIO ELDIAMANTE LIMITADA","numIdTributaria": 8002148505
+                                }
+                            }
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0125",
+                                "nomNaturalezaJuridicaFolio": "COMPRAVENTA"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "COMPRAVENTA"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio": "ESCRITURA 1513 del 2003-05-16 00:00:00 NOTARIA 11 de BOGOTA",
+                            "fechaDocumentoAnotacion": "2003-05-16T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "dominio": "X",
+                        "entidadAnotacion": "NOTARIA 11",
+                        "fechaAnotacion": "2003-05-26T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 4,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos",
+                            "cantidadMonetaria": 55000000
+                        },
+                        "radicacionAnotacion": "2003-46497"
+                    },
+                    {
+                        "grupo": "HIPOTECA ABIERTA",
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "FONDO NACIONAL DE AHORRO CARLOS LLERAS RESTREPO",
+                                    "numIdTributaria": 899999284
+                                }
+                            },
+                            "personaCedePredio": {
+                                "personaNacionalIntervieneActo": [
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 39707587
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "porcentajeParticipacion": 39707587,
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "PULIDO",
+                                            "segundoNombre": "MARISOL",
+                                            "segundoApellido": "PAVA",
+                                            "primerNombre": "BIBIA"
+                                        }
+                                    },
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 79621601
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "TARAZONA",
+                                            "segundoNombre": "",
+                                            "segundoApellido": "URREGO",
+                                            "primerNombre": "ROBERTO"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0204",
+                                "nomNaturalezaJuridicaFolio": "HIPOTECA ABIERTA"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "HIPOTECA ABIERTA"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio": "ESCRITURA 1513 del 2003-05-16 00:00:00 NOTARIA 11 de BOGOTA",
+                            "fechaDocumentoAnotacion": "2003-05-16T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "dominio": "H",
+                        "entidadAnotacion": "NOTARIA 11",
+                        "fechaAnotacion": "2003-05-26T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 5,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos",
+                            "cantidadMonetaria": 43000000
+                        },
+                        "radicacionAnotacion": "2003-46497"
+                    },
+                    {
+                        "grupo": "CANCELACION HIPOTECA RESPECTO DE ESTE INMUEBLE","personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "CONSORCIO EL DIAMANTE LIMITADA","numIdTributaria": 8002148505
+                                }
+                            },
+                            "personaCedePredio": {
+                                "personaNacionalIntervieneActo": {
+                                    "identificacionPersona": {
+                                        "grupoNumeroIdentificacion": {
+                                            "numeroCedulaCiudadania": 10955273
+                                        },
+                                        "tipoIdNacionalPersona": {
+                                            "codTipoIdentificacion": "SE"
+                                        }
+                                    },
+                                    "nomPersonaIndividual": {
+                                        "primerApellido": "BANCO GRANAHORRAR","segundoNombre": "",
+                                        "primerNombre": ""
+                                    }
+                                }
+                            }
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0783",
+                                "nomNaturalezaJuridicaFolio": "CANCELACION HIPOTECA RESPECTO DE ESTE INMUEBLE"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "CANCELACION HIPOTECA RESPECTO DE ESTE INMUEBLE"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio": "ESCRITURA 887 del 2003-05-09 00:00:00 NOTARIA 9 de BOGOTA",
+                            "fechaDocumentoAnotacion": "2003-05-09T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": {
+                            "numeroAnotacion": 1
+                        },
+                        "comentario": "EN MAYOR EXTENSION.",
+                        "dominio": "C",
+                        "entidadAnotacion": "NOTARIA 9",
+                        "fechaAnotacion": "2003-06-11T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 6,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos",
+                            "cantidadMonetaria": 56000000
+                        },
+                        "radicacionAnotacion": "2003-52894"
+                    },
+                    {
+                        "grupo": "ACLARACION",
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaNacionalIntervieneActo": {
+                                    "identificacionPersona": {
+                                        "grupoNumeroIdentificacion": {
+                                            "numeroCedulaCiudadania": 10955282
+                                        },
+                                        "tipoIdNacionalPersona": {
+                                            "codTipoIdentificacion": "SE"
+                                        }
+                                    },
+                                    "nomPersonaIndividual": {
+                                        "primerApellido": "GRANAHORRAR BANCO COMERCIAL S.A. O BANCO GRANAHORRAR.",
+                                        "segundoNombre": "",
+                                        "primerNombre": ""
+                                    }
+                                },
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "CONSORCIO EL DIAMANTE LIMITADA","numIdTributaria": 8002148505
+                                }
+                            },
+                            "personaCedePredio": ""
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0901",
+                                "nomNaturalezaJuridicaFolio": "ACLARACION"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "ACLARACION"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio": "ESCRITURA 1141 del 2003-06-09 00:00:00 NOTARIA 9 de BOGOTA",
+                            "fechaDocumentoAnotacion": "2003-06-09T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "comentario": "ESCRITURA 887 DE 09-05-2003- DE LA NOTARIA 9 DE BOGOTA, EN CUANTO A INDICAR LAS MATRICULA INMOBILIARIAS DE LOS INMUEBLES A LIBERAR DE LA HIPOTECA ALLI INDICADA.",
+                        "entidadAnotacion": "NOTARIA 9",
+                        "fechaAnotacion": "2003-06-11T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 7,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "2003-52898"
+                    },
+                    {
+                        "grupo": "ACLARACION",
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaNacionalIntervieneActo": [
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 39707587
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "porcentajeParticipacion": "C.C. 39.707.587",
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "PULIDO",
+                                            "segundoNombre": "MARISOL",
+                                            "segundoApellido": "PAVA",
+                                            "primerNombre": "BIBIA"
+                                        }
+                                    },
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 79621601
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "TARAZONA",
+                                            "segundoNombre": "",
+                                            "segundoApellido": "URREGO",
+                                            "primerNombre": "ROBERTO"
+                                        }
+                                    }
+                                ],
+                                "personaJuridicaIntervieneActo": [
+                                    {
+                                        "razonSocial": "FONDO NACIONAL DE AHORRO CARLOS LLERAS RESTREPO","numIdTributaria": 899999284
+                                    },
+                                    {
+                                        "razonSocial": "CONSORCIO EL DIAMANTE LIMITADA","numIdTributaria": 8002148505
+                                    }
+                                ]
+                            },
+                            "personaCedePredio": ""
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0901",
+                                "nomNaturalezaJuridicaFolio": "ACLARACION"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "ACLARACION"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio": "ESCRITURA 2131 del 2003-07-17 00:00:00 NOTARIA 11 de BOGOTA",
+                            "fechaDocumentoAnotacion": "2003-07-17T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "comentario": "ESCRITURA # 1513 DE 16-5-2003, NOTARIA 11 DE BOGOTA D.C., EN CUANTO A LA CLAUSULA TERCERA VALOR Y FORMA DE PAGO",
+                        "entidadAnotacion": "NOTARIA 11",
+                        "fechaAnotacion": "2003-07-31T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 8,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "2003-70864"
+                    },
+                    {
+                        "grupo": "REFORMA REGLAMENTO DE PROPIEDAD HORIZONTAL",
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaNacionalIntervieneActo": {
+                                    "identificacionPersona": {
+                                        "grupoNumeroIdentificacion": {
+                                            "numeroCedulaCiudadania": 11211353
+                                        },
+                                        "tipoIdNacionalPersona": {
+                                            "codTipoIdentificacion": "SE"
+                                        }
+                                    },
+                                    "nomPersonaIndividual": {
+                                        "primerApellido":
+    "AGRUPACION DE VIVIENDA DIAMANTE DE ZARZAMORA -PROPIEDAD HORIZONTAL",
+                                        "segundoNombre": "",
+                                        "primerNombre": ""
+                                    }
+                                }
+                            },
+                            "personaCedePredio": ""
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0331",
+                                "nomNaturalezaJuridicaFolio": "REFORMA REGLAMENTO DE PROPIEDAD HORIZONTAL"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "REFORMA REGLAMENTO DE PROPIEDAD HORIZONTAL"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio":
+    "ESCRITURA 1920 del 2004-08-12 00:00:00 NOTARIA 63 de BOGOTA  D.C.","fechaDocumentoAnotacion": "2004-08-12T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "comentario": "ESCRITURA 485 DE 05-02-1998 Y 661 DE 17-02-1998 NOT 9, ESCRITURA 5446 DEL 18-09-2002 NOT 24 EN CUANTO AL ARTICULO 16 BIENES COMUNES ESENCIALES EXCLUYENDO DEL MISMO EL NUMERAL 11","entidadAnotacion": "NOTARIA 63",
+                        "fechaAnotacion": "2005-07-27T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 9,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "2005-68253"
+                    },
+                    {
+                        "grupo": "COMPRAVENTA DERECHOS DE CUOTA",
+                        "personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaNacionalIntervieneActo": {
+                                    "identificacionPersona": {
+                                        "grupoNumeroIdentificacion": {
+                                            "numeroCedulaCiudadania": 11782292
+                                        },
+                                        "tipoIdNacionalPersona": {
+                                            "codTipoIdentificacion": "SE"
+                                        }
+                                    },
+                                    "esPropietario": "X",
+                                    "nomPersonaIndividual": {
+                                        "primerApellido": "PULIDO",
+                                        "segundoNombre": "CAMILO",
+                                        "segundoApellido": "PAVA",
+                                        "primerNombre": "JULIAN"
+                                    }
+                                }
+                            },
+                            "personaCedePredio": {
+                                "personaNacionalIntervieneActo": {
+                                    "identificacionPersona": {
+                                        "grupoNumeroIdentificacion": {
+                                            "numeroCedulaCiudadania": 79621601
+                                        },
+                                        "tipoIdNacionalPersona": {
+                                            "codTipoIdentificacion": "CC"
+                                        }
+                                    },
+                                    "nomPersonaIndividual": {
+                                        "primerApellido": "TARAZONA",
+                                        "segundoNombre": "",
+                                        "segundoApellido": "URREGO",
+                                        "primerNombre": "ROBERTO"
+                                    }
+                                }
+                            }
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0307",
+                                "nomNaturalezaJuridicaFolio": "COMPRAVENTA DERECHOS DE CUOTA"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "COMPRAVENTA DERECHOS DE CUOTA"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio":
+                            "ESCRITURA 4066 del 2010-10-27 00:00:00 NOTARIA 11 de BOGOTA D.C.",
+                            "fechaDocumentoAnotacion": "2010-10-27T00: 00: 00.0",
+                            "codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": "",
+                        "comentario": "EQUIVALENTES AL 50%",
+                        "dominio": "X",
+                        "entidadAnotacion": "NOTARIA 11",
+                        "fechaAnotacion": "2010-11-04T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 10,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos",
+                            "cantidadMonetaria": 27000000
+                        },
+                        "radicacionAnotacion": "2010-109020"
+                    },
+                    {
+                        "grupo": "CANCELACION POR VOLUNTAD DE LAS PARTES","personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaNacionalIntervieneActo": [
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 39707587
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "PULIDO",
+                                            "segundoNombre": "MARISOL",
+                                            "segundoApellido": "PAVA",
+                                            "primerNombre": "BIBIA"
+                                        }
+                                    },
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 79621601
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "CC"
+                                            }
+                                        },
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "TARAZONA",
+                                            "segundoNombre": "",
+                                            "segundoApellido": "URREGO",
+                                            "primerNombre": "ROBERTO"
+                                        }
+                                    }
+                                ]
+                            },
+                            "personaCedePredio": {
+                                "personaJuridicaIntervieneActo": {
+                                    "razonSocial": "FONDO NACIONAL DE AHORRO CARLOS LLERAS RESTREPO","numIdTributaria": 899999284
+                                }
+                            }
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0843",
+                                "nomNaturalezaJuridicaFolio": "CANCELACION POR VOLUNTAD DE LAS PARTES"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "CANCELACION POR VOLUNTAD DE LAS PARTES"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio":
+    "ESCRITURA 3855 del 2010-10-13 00:00:00 NOTARIA 11 de BOGOTA D.C.","fechaDocumentoAnotacion": "2010-10-13T00: 00: 00.0","codDocumentoAnotacionFolio": 1
+                        },
+                        "cancelacionAnotacion": {
+                            "numeroAnotacion": 5
+                        },
+                        "comentario": "HIPOTECA",
+                        "dominio": "C",
+                        "entidadAnotacion": "NOTARIA 11",
+                        "fechaAnotacion": "2012-10-24T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 11,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "2012-100212"
+                    },
+                    {
+                        "grupo": "CONSTITUCION PATRIMONIO DE FAMILIA","personaIntervieneActoAnotacionFolio": {
+                            "personaRecibePredio": {
+                                "personaNacionalIntervieneActo": [
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 11974467
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "SE"
+                                            }
+                                        },
+                                        "esPropietario": "X",
+                                        "nomPersonaIndividual": {
+                                            "primerApellido": "PULIDO",
+                                            "segundoNombre": "CAMILO",
+                                            "segundoApellido": "PAVA",
+                                            "primerNombre": "JULIAN"
+                                        }
+                                    },
+                                    {
+                                        "identificacionPersona": {
+                                            "grupoNumeroIdentificacion": {
+                                                "numeroCedulaCiudadania": 11976480
+                                            },
+                                            "tipoIdNacionalPersona": {
+                                                "codTipoIdentificacion": "SE"
+                                            }
+                                        },
+                                        "nomPersonaIndividual": {
+                                            "primerApellido":
+    "FAVOR SUYO, DE SU CONYUGE O COMPA\\ERO(A) PERMANENTE, DE SUS  HIJOS MENORES ACTUALES Y DE LOS QUE LLEGAREN A TENER","segundoNombre": "",
+                                            "primerNombre": ""
+                                        }
+                                    }
+                                ]
+                            },
+                            "personaCedePredio": {
+                                "personaNacionalIntervieneActo": {
+                                    "identificacionPersona": {
+                                        "grupoNumeroIdentificacion": {
+                                            "numeroCedulaCiudadania": 39707587
+                                        },
+                                        "tipoIdNacionalPersona": {
+                                            "codTipoIdentificacion": "CC"
+                                        }
+                                    },
+                                    "esPropietario": "X",
+                                    "nomPersonaIndividual": {
+                                        "primerApellido": "PULIDO",
+                                        "segundoNombre": "MARISOL",
+                                        "segundoApellido": "PAVA",
+                                        "primerNombre": "BIBIA"
+                                    }
+                                }
+                            }
+                        },
+                        "especificacionAnotacionFolio": {
+                            "naturalezaJuridicaFolio": {
+                                "codNaturalezaJuridicaFolio": "0315",
+                                "nomNaturalezaJuridicaFolio": "CONSTITUCION PATRIMONIO DE FAMILIA"
+                            },
+                            "comentarioEspecificaAnotacionFolio": "CONSTITUCION PATRIMONIO DE FAMILIA"
+                        },
+                        "documentoAnotacionCertificadoTradicion": {
+                            "nomDocumentoAnotacionFolio": "DECLARACIONES SIN del 2012-10-29 00:00:00 NOTARIA 18 de BOGOTA D.C.",
+                            "fechaDocumentoAnotacion": "2012-10-29T00: 00: 00.0",
+                            "codDocumentoAnotacionFolio": 9
+                        },
+                        "cancelacionAnotacion": "",
+                        "comentario": "LEY 962 DE 2005.",
+                        "dominio": "P",
+                        "entidadAnotacion": "NOTARIA 18",
+                        "fechaAnotacion": "2012-10-30T00:00:00.0",
+                        "nombreMunicipioAnotacion": "ENGATIVA",
+                        "validez": "VALIDA",
+                        "numeroAnotacion": 12,
+                        "valorActo": {
+                            "codTipoMoneda": "Pesos"
+                        },
+                        "radicacionAnotacion": "2012-101514"
+                    }
+                ]
+            }
+        },
+        "datosBasicosInmueble": {
+            "direcciones": {
+                "grupoDireccionDomiciliaria": [
+                    {
+                        "direccionNacionalUrbana": {
+                            "nomenclaturaDomiciliariaUrbana": "KR91A 73A 80 BQ 7 CA 8 (DIRECCION CATASTRAL)","municipio": {
+                                "nomMunicipio": "ENGATIVA",
+                                "codMunicipio": 265
+                            },
+                            "numeroDireccion": 2,
+                            "departamento": {
+                                "nomDepartamento": "BOGOTA D.C.",
+                                "codDepartamento": 11
+                            }
+                        }
+                    },
+                    {
+                        "direccionNacionalUrbana": {
+                            "nomenclaturaDomiciliariaUrbana": "CARRERA 91 A 73 A-80 CASA 8 BLOQUE 7 AGRUPACION DE VIVIENDA DIAMANTE DE ZARZAMORA PRIMERA ETAPA",
+                            "municipio":
+                            {
+                                "nomMunicipio": "ENGATIVA",
+                                "codMunicipio": 265
+                            },
+                            "numeroDireccion": 1,
+                            "departamento": {
+                                "nomDepartamento": "BOGOTA D.C.",
+                                "codDepartamento": 11
+                            }
+                        }
+                    }
+                ]
+            },
+            "chipPredio": "AAA0173RMCX",
+            "anotacionCertificadoTradicion": {
+                "personaIntervieneActoAnotacionFolio": {
+                    "personaRecibePredio": {
+                        "personaNacionalIntervieneActo": {
+                            "identificacionPersona": {
+                                "grupoNumeroIdentificacion": {
+                                    "numeroCedulaCiudadania": 11782292
+                                },
+                                "tipoIdNacionalPersona": {
+                                    "nomTipoIdentificacion": "",
+                                    "codTipoIdentificacion": "SE"
+                                }
+                            },
+                            "esPropietario": "X",
+                            "nomPersonaIndividual": {
+                                "primerApellido": "PULIDO",
+                                "segundoNombre": "CAMILO",
+                                "segundoApellido": "PAVA",
+                                "primerNombre": "JULIAN"
+                            }
+                        }
+                    }
+                }
+            },
+            "direccionInmueble": "KR 91A 73A 80 BQ 7 CA 8 (DIRECCION CATASTRAL)","departamentoPredio": {
+                "nomDepartamento": "BOGOTA D.C.",
+                "codDepartamento": 11
+            },
+            "numeroMatricula": 1554340,
+            "tipoCirculoRegistral": {
+                "jurisdiccionPredio": "BOGOTA ZONA CENTRO"
+            },
+            "municipioPredio": {
+                "nomMunicipio": "ENGATIVA",
+                "codMunicipio": 265
+            },
+            "veredaPredio": {
+                "codCentroPobladoTerritorio": "00",
+                "nomCentroPobladoTerritorio": "ENGATIVA"
+            },
+            "cedulaCatastral": "AAA0173RMCX"
+        },
+        "tipoLogResultadoConsulta": {
+            "fechaHoraConsulta": "2018-10-29T10:03:22.124",
+            "consecutivoConsulta": 124757713,
+            "identificacionNotaria": "",
+            "mensaje": "Consulta Exitosa"
+        },
+        "tipoDepartamentoMunicipioDivipola": {
+            "municipio": {
+                "nomMunicipio": "BOGOTÁ, D.C.",
+                "codMunicipio": 11001
+            },
+            "departamento": {
+                "nomDepartamento": "BOGOTÁ D.C.",
+                "codDepartamento": 11
+            }
+        },
+        "listaMatriculaRelacionadaPredio": {
+            "matriculaRelacionadaSNR": {
+                "numeroMatriculaPredio": 1469368,
+                "descripcion": "CASA 8 BLOQUE 7",
+                "circulo": "50C",
+                "calificacionMatriculaInmobiliaria": "MATRIZ"
+            }
+        }
+    }
+]

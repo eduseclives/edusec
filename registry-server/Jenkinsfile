@@ -1,0 +1,43 @@
+#!/usr/bin/env groovy
+
+pipeline {
+
+    agent any
+
+    //options {
+        
+    //}
+
+    tools {
+        jdk "JDK 17.0.9"
+    }
+
+    stages {
+        stage('Cleanup') {
+            steps {
+                cleanWs()
+            }
+        }
+
+        stage('checkout') {
+            steps {
+                checkout scm
+                sh "git checkout ${BRANCH_NAME}"
+                sh "git show --summary"
+            }
+        }
+
+        stage('build') {
+            steps {
+                sh "chmod +x mvnw"
+                sh "./mvnw package -Pprod verify jib:build"
+            }
+        }
+
+        stage('Cleanup End') {
+            steps {
+                cleanWs()
+            }
+        }
+    }
+}
